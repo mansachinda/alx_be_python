@@ -1,16 +1,13 @@
 # Input Prompt for Monthly Income and Montly Expenses
-mi = input("Enter your monthly income: ")
-i = int(mi)
-me = input("Enter your total monthly expenses: ")
-e = int(me)
+monthly_income = int(input("Enter your monthly income: "))
+monthly_expenses = int(input("Enter your total monthly expenses: "))
 
 # Calculates Monthly Savings
-ms = i - e
+Monthly_Savings = monthly_income - monthly_expenses
 
-# Calculate Projected Savings
-projected_savings = ms * 12 + (ms * 12 * 0.05)
-ps = int(projected_savings)
+# Calculate Projected Annual Savings
+Projected_Savings = Monthly_Savings * 12 + (Monthly_Savings * 12 * 0.05)
+Projected_Savings = int(Projected_Savings)
 
 # Prints result of both outputs below
-print("Your monthly", "savings are", "$",ms)
-print("Projected savings after one year, with interest, is:", "$",ps)
+print(f"Your monthly savings are ${Monthly_Savings}. \nProjected savings after one year, with interest, is: ${Projected_Savings}.")
