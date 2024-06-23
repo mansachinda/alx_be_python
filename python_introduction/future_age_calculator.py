@@ -1,5 +1,5 @@
 # Input Prompt for Variable containing age
-current_age = int(input("How old are you? \n" ))
+current_age = int(input("How old are you?\n"))
 
 # Variable containing current_year value
 current_year = 2023
