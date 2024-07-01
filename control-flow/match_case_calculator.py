@@ -1,18 +1,24 @@
+# Prompt for User Input with 'num1' and 'num2' variable
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-type_of_operation = str(input("Choose the operation (+, -, *, /): "))
+operation_type = str(input("Choose the operation (+, -, *, /): "))
 
-match type_of_operation:
+# Match Case condition 
+match operation_type:
     case "+":
-        print(f"The result is {num1+num2}.")
+        result = num1+num2
+        print(f"The result is {result}.")
+
     case "-":
-        print(f"The result is {num1-num2}.")
-    case "//":
-        print(f"The result is {num1//num2}.")
+        result = num1 - num2
+        print(f"The result is {result}.")
+
     case "*":
-        print(f"The result is {num1*num2}.")
+        result = num1 * num2
+        print(f"The result is {result}.")
     case "/":
-        print(f"Cannot divide by zero.")
-    case _:
-        print(f"Push to start.")
+        if num1 or num2 == 0:
+            print("Cannot divide by zero.")
+        result = num1 / num2
+        print(f"The result is {result}.")
 
