@@ -2,7 +2,7 @@
 task_reminder = input("Enter your task: ")
 
 # Prompt User Input with 'priority' variable
-task_priority = input("Priority (high/medium/low): ").lower()
+priority = input("Priority (high/medium/low): ").lower()
 
 # Prompt User Input with 'urgency' variable
 time_bound = input("Is it time-bound? (yes/no): ").lower()
@@ -10,8 +10,8 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 # Customised Reminder with 'f' format
 reminder = f"'{task_reminder}' is a {task_priority} priority task"
 
-# 'Match Case' condition to evaluate 'task_priority' variable
-match task_priority:
+# 'Match Case' condition to evaluate 'priority' variable
+match priority:
     case "high":
         print(f"\nReminder: {reminder}", end="")
     case "medium":
