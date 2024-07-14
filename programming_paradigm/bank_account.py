@@ -8,13 +8,11 @@ class BankAccount:
 
 # Create Deposit() function
     def deposit(self, amount):
-        amount = input(float(f"Deposit amount: "))
         self.account_balance += amount
         return self.account_balance
 
 # Create Withdraw() function
     def withdraw(self, amount):
-        amount = input(float(f"Withdraw amount: "))
         if self.account_balance > amount:
             self.account_balance -= amount
             return True
